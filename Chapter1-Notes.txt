@@ -1,0 +1,59 @@
+Chapter 1: A Brief History of HTML and the World Wide Web
+Hypertext Markup Language - describing how text, graphics, and files containing other info are organized and linked together.
+WWW - World Wide Web
+web content != web pages
+web content - looking at all the text and the images that we see, are rendered by our web browsers, which are given certain instructions found in individual files.
+HTML markup tells the browser to display an image or video file rather than plain text
+XHTML - X standing for eXtensible
+Simple version of the web content delivery process:
+	1. Web browser sends request for index.html located at https://www.google.com/ 
+	2. web server processes, looks in directory, opens it, and sends content of that file back to browser
+	3. browser receives content, which is text marked up with HTML codes, and renders the content
+	4. browser looks at the src attribute in the </img> tag to find source
+	5. browser requests the file at the google.com/logos/logo.gif web address
+	6. server interprets that request, finds the file, and sends the contents of that file to the web browser
+	7. browser displays the image on monitor
+can view web content locally, or on your own hard drive without the need for a server
+Selecting a Web Hosting Provider
+domain name + year of web hosting
+look for: reliability (uptime), customer service, server space, bandwidth, domain name purchase, price
+Reccommendations: A Small Orange, DailyRazor, LunarPages
+Do not spend hours on end designing something that looks perfect on your computer -- unless you are willing to 
+be disappointed when you look on another computer. 
+Test on different browsers. 
+FTP - File Transfer Protocol 
+FTP clients require three pieces of information to connect your server:
+	>Hostname
+	>account username
+	>account password
+Popular FTP clients:
+Fetch, FileZilla, FireFTP, CyberDuck
+When you have a selected FTP client and installed, you are ready to upload and download files from your server.
+Using an FTP client:
+1. Fill in >> 
+	The site Label is the name you'll use to refer to your own site.
+	The FTP server is the FTP address of the web server to which you need to send your web pages.
+	...This address will have been given to you by your hosting provider. yourdonaim.com
+	The username/password
+	Dont change values for Initial Remote Directory on First Connection and Initial Local Directory on First Connection
+	...until you are used to using the client and have established a workflow.
+2. Change directories to what is called the document root.
+document root of your server is the directory that is designated to the top-level directory for your web content (perhaps public_html)
+3. The goal is to transfer the sample.html you created to the server. 
+   Find the file in the directory listing on the left of the FTP client interface and click on it once to highligh the filename.
+4. Click the right arrow in the middle of the client interface to send file to server. 
+5. Click the disconnect to close the connection. 
+
+Basic File Management
+document root of a web server is essentially the trailing slash in the full URL
+Example: domain is > yourdonaim.com URL is > http://ww.yourdomain.com/
+the document root is the directory presented by the trailing slash
+...the sterting point of the directory structure you create on your web server
+Always navigate to the document root of your web server before you start transferring files.
+The index file in a web server directory can serve the same purpose as the index in a book. 
+index.html file is the name you give to the page you want people to see as the default  file when they navigate to a specific directory
+these configuration options will have already been determined by your hosting provider
+
+Distributing Content w/o a Web Server
+Publishing Content Locally
+Assuming you need to create a local site that you wnat to distribute on a USB drive
