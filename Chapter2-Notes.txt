@@ -1,0 +1,43 @@
+CHAPTER 2: Understanding HTML and XHTML Connections
+Explaining the various elements that must appear in an HTML file so that it is 
+displayed appropriately in your web browser.
+A web page is just a text file that is marked up by HTML codes that tell the browser
+how to display the text. 
+To create these text files use a text editor such as Notepad or Textedit.
+.html
+every web page you create must include:
+<html></html>
+<head></head>
+<title></title>
+<body></body>
+< these are coded commands >
+XHTML is a more structured version of HTML
+<?xml version="1.0" encoding="UTF-8"?> meands its XHTML
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.1//EN”
+“http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd”>
+<p></p> line break when it ends
+<br/> forces a lne break
+<hr/> horizontal rule line causing a line break
+<title> gives the entire oage an identifying name that isnt displayed on the page itself;
+its displayed on the browsers title bar
+heading tags on the other hand cause some text on the page to be displayed w visual emphasis
+do not use headings as a way to achieve a particular look beccause thats what CSS is for
+validating your web content:
+validating is the process of testing your pages w a special app that searches for errors
+and makes sure your pages follow the strict XHTML standard.
+the World Wide Web Consortium (W3C) -- offers an online validation tool you can use
+http://validator.w3.org/
+The problem with disorder in HTML is that it
+results in web browsers having to guess at how a page is to be displayed,
+which is not a good thing.
+you
+could create your own version of HTML using XML
+The point is that XML lays the
+ground rules for organizing information in a consistent manner, and that
+information can be anything from web pages to bottle caps
+The new XML-compliant version of HTML is known as XHTML
+You might have heard about HTML5, which is touted as the next web standard. It will be, but not quite yet. When it does become a web standard, it
+will not render XHTML useless—HTML5 is not a replacement for XHTML,
+but instead is a major revision of HTML 4.
+The goal of this book is to guide you through the basics of web publishing,
+using XHTML and CSS as the core languages of those pages
