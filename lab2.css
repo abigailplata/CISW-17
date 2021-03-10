@@ -1,0 +1,29 @@
+body {
+	background-color: aliceblue;
+	font-family: Verdana, Helvetica, Arial;
+}
+
+h1 {
+	background-color: lavender;
+	color: black;
+	text-shadow: 2px 2px 5px indigo;
+	text-align: center;
+	font-size: 30px;
+}
+
+h2 {
+	border-style: outset;
+	border-color: lightgrey;
+	color: black;
+	font-size: 20px;
+}
+
+p {
+	font-size: 14px;
+}
+
+footer {
+	font-style: italic;
+	font-size: 12px;
+}
+
