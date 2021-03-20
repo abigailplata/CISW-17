@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Summary of Chapter 6-8 </title>
+		<meta name="author" content="Abigail Plata">
+		<meta name="description" content="CRN 40652 &middot; 13 March 2021 &middot; Assignment 4" > 
+	</head>
+	<body>
+		<h1><a id="top"></a> Summary of Chapters 6-8 </h1>
+
+		<h2>Using Tables to Display Information </h2>
+		<p>
+			When displaying data sometimes it is a better way to present information.
+			By using the &#60; table &#62; tag, and of course the closing &#60; &frasl; table &#62; tag, 
+			can get the developer started on the skeleton of a table before adding borders, padding, colors, etc.
+			The next thing would be to add the &#60; tr &#62;, which would create a table row  &#40; tr &#41;.
+			If you want the table to have a border then you'll have to use the border attribute, 
+			otherwise a bordersize of 0 will make the border invisible. Now, to create the individual cells,
+			use the &#60; td &#62; tag which stands for table data. You can place the table information in between the 
+			&#60; td &#62; &#60; &frasl; td &#62; tags. Each row in a table consists of at least one cell and multiple
+			cells within a row form a column. The last general tag for a table is the &#60; th &#62; which indicates 
+			that the cell is part of the heading of the table. Most browsers render the text in &#60; th &#62; cells
+			as centered and bold. You can create as many cells as you wish, but each row should generally have the same
+			number of columns as the other rows. An example of a general table&#58;
+			<table> 
+			<tr> <th>City</th> <th>County</th> <th>Population</th> </tr>
+			<tr> <td>Bell</td> <td> Los Angeles </td> <td> 35,682 </td> </tr>
+			<tr> <td>Hayward</td> <td> Alameda </td> <td> 159,293 </td> </tr>
+			<tr> <td>Irvine</td> <td> Orange </td> <td> 273,157 </td> </tr>
+			<tr> <td>Atwater</td> <td> Merced </td> <td> 29,296 </td> </tr>
+			</table>
+			This is a table before adding any styles, but you can add any text styles in a table cell. However, styles or
+			HTML tags do not carry over to other cells as well as tags outside of the table. When the table width isn't 
+			specified, the size automatically expand to fit the data. As seen above. To control the size of the entire table, use width
+			and/or height styles in the &#60; table &#62; tag. You can also control the size in individual cells. The width and height 
+			can be specified in terms of pixels or percentages. Next, we can allign the text to the&#58; top, middle, bottom, text-top, text-bottom,
+			and baseline (for text). Finally, we have spanning. Spanning is the process of forcing a cell to stretch across more than one
+			row or column of a table. The colspan attribute causes a cell to span across multiple columns; rowspan is the same for rows.
+			Tweaking tables goes further than just using style properties though. 		
+		</p>
+
+		<h2> External and Internal Links</h2>
+		<p> 
+			At this point our webpages are pieces of content with no connection to eachother or anything. To turn it into real web content, you
+			will need to connect it to the rest of the web--or at least to other pages within your site. When files are stored in the same location,
+			you can link them to eachother by simply providing the name of the file in the href attribute of the &#60; a &#62; tag. After you have more 
+			than a few pages, or when you you start to have an organization structure, you should put your files into folders whose names reflect the content.
+			An example: &#60;a href="/cities/losangeles.html"&#62;Learn about the City of Los Angeles.&#60; /a&#62; This is a relative-root addresses in that
+			they are relative addresses that lack the entire domain name, but are specifically relative to the document root. An absolute link is when it is 
+			absolutely no doubt where the link should go because the whole URL is provided. A double dot in a link is a special comman that indicates the
+			folder that contains the current folder (the parent folder). 
+		</p>
+		<p>
+			The &#60; /a&#62; tag responsible for links gets its name from the word "anchor", which means the link serves as a designation for a 
+			spot in the web page. The &#60; /a&#62; tag can be used to mark a spot on a page as an anchor, which helps you make links that points 
+			to an exact point you want. For example: &#60;a id="top"&#62;&#60; /a&#62; The &#60; /a&#62; tag gives a name to the specific point 
+			on the page where the tag occurs. The &#60;a href="#top"&#62; Return to Index.&#60; /a&#62; The # symbol means that the word top 
+			refers to a named anchor point. 
+		</p>
+		
+		<p> <a href="#top"> Take me to the top! :)</a> </p>
+		
+		<p>
+			
+		</p>
+
+		<h2>Colors, Images, and Multimedia</h2>
+		<p>
+
+		</p>
+
+		<h2> Creating and Testing JavaScript </h2>
+		<p>  
+
+		</p>
+
+	</body>
+	
+	<footer>
+	</footer>
+</html>
