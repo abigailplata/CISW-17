@@ -60,6 +60,15 @@
 			var dateTime = date+' '+time;
 			
 			document.getElementById("p1").innerHTML = dateTime;
+			
+			d = new Date();
+			localTime = d.getTime();
+			localOffset = d.getTimezoneOffset() * 60000;
+			UTC = localTime + localOffset;
+			offset = (-4);
+			newyork = UTC + (3600000*offset);
+			nd = new Date(newyork);
+			document.writeln("New York Time: " + nd.toLocaleString() + "<br>");
 		</script>
 
 	</body>
