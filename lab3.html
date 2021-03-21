@@ -52,13 +52,9 @@
 		
 		<script>
 			var today = new Date();
-			
 			var date = 'Time Last Opened: '+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-			
 			var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+' PST';
-			
 			var dateTime = date+' '+time;
-			
 			document.getElementById("p1").innerHTML = dateTime;
 			
 			d = new Date();
@@ -68,7 +64,7 @@
 			offset = (-4);
 			newyork = UTC + (3600000*offset);
 			nd = new Date(newyork);
-			document.writeln("New York Time: " + nd.toLocaleString() + "<br>");
+			document.writeln("<i> New York Time: </i>" + "<i>" + nd.toLocaleString() + " EST </i><br><br>");
 		</script>
 
 	</body>
