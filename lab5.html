@@ -1,0 +1,147 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Summary of Chapter 9-11 </title>
+		<meta name="author" content="Abigail Plata">
+		<meta name="description" content="CRN 40652 &middot; 28 March 2021 &middot; Assignment 5" > 
+	
+		<style>
+			div {
+				background-color: lightgrey;
+				width: 300px;
+				border: 15px solid green;
+				padding: 50px;
+				margin: 20px;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<h1><a id="top"></a> Summary of Chapters 9-11 </h1>
+
+		<h2>Working with Margins, Padding, Alignment, and Floating  </h2>
+		<p>
+			It is important to understand the four particular CSS properties individually before putting them together (margin and padding properties + align and float properties).
+		</p>
+		
+		<h3> Margins </h3>
+		<p>
+			Style sheet margins enables the developer to add empty space around the outside of the rectangular area for an element on a web page. 
+			The following are style properties for setting margins:
+			<ul>
+				<li>margin-top</li>
+				<li>margin-right</li>
+				<li>margin-bottom</li>
+				<li>margin-left</li>
+				<li>margin (sets the top, right, bottom, and left margins as a single property)</li>
+			</ul> 
+			Margins can be specified as auto, meaning the browser sets the margin in specific lengths or percentages.
+			If the margin is set in a percentage, it is calculated based on the size of the entire page, not the size of the element.
+			When using shorthand for setting margins, padding, or borders, there are actually three approaches, based on the amount of values you use:
+			<ul>
+				<li><b>One value</b>-the size of all the margins</li>
+				<li><b>Two values</b>-The size of the top/bottom margins and the left/right margins in that order.</li>
+				<li><b>Four values</b>-The size of the top, right, bottom, left margins in that order.</li>
+			</ul>
+			Margin specifications are incredibly useful for element placement, but use with caution when setting specifications. 
+		</p>
+		
+		<h3> Padding Elements</h3>
+		<p>
+			Padding is similar to margins in that it adds extra space to elements, but the difference is where the space is located. 
+			Margins are added spcae outside of the element. Padding adds space inside the rectangular area of the element. 
+			For instance, if you creat a style rule for an element that has a width of 50 pixels and height of 30 pixels, and then set the padding to 5 pixels, the remaining content area will be 40 pixels by 20 pixels.
+			Because the padding of an element appears in the element's content area, it assumes the same style as the content of the element, including background color. 
+			You can specify the padding of a style rule using the padding properties which work like the margin properties.
+			Like margins, you can set the padding of style rules using inidivdual padding properties or the single padding property.
+			If you place the text  &#60; p &#62; element and give that element a white background, you can see where the padding is in relation to the text.
+		</p>
+		
+		<h3> Alignment </h3>
+		<p>
+			Content on a webpage doesn't always fill the entire rectangular area, so it is helpful to control the alignment of the content. 
+			Even if text within a rectangular extends to multiple lines, alignment still enters the picture because you might want the text left-justified, right-justified, or centered. 
+			There are two style properties that enable you to control the alignment of elements: text-align and vertical-align.
+			<b>text-align</b> aligns an element horizontally within its bounding area, and it can be set to: left, right, center, or justify.
+			The <b>vertical-align</b> property is similar to <b>text-align</b> except that it is used to align elements vertically.
+			It specifies how an element is aligned with it's parent, or the current line of elements on the page. Current line refers to the vertical placement of elements that appear within the same parent element.
+			Basically, inline elements. If several inline elements appear on the same line, you can set their vertical alignments the same to align them vertically. For instance, a row of images that appear one after the next - the <b>vertical-align</b> property enables you to align them vertically.
+			These are common values for use with the <b>vertical-align</b> property:
+			<ul>
+				<li><b>top</b>-Aligns the top of an element with the current line.</li>
+				<li><b>middle</b>-Aligns the middle of an element with the middle of it's parent.</li>
+				<li><b>bottom</b>-Aligns the bottom of an element with the current line.</li>
+				<li><b>text-top</b>-Aligns the top of an element with the top of it's parent.</li>
+				<li><b>baseline</b>-Aligns the baseline of an element with the baseline of it's parent.</li>
+				<li><b>text-bottom</b>-Aligns the bottom of an element with the bottom of it's parent.</li>
+			</ul>
+		</p>
+		<h3> Float Property </h3>
+		<p>
+			The <b>float</b> property allows elements to be moved around in the design such that other elements can wrap around them.
+			You will often use this property for images, but you can float all sorts of elements. Elements float horizontally not vertically, so there are only two values: <b>right</b> and <b>left</b>.
+			When used, an element that floats will float as far right or left as the containing element allows it. 
+		</p>
+
+		<h2> Understanding the CSS Box Model and Positioning</h2>
+		<p> 
+			Every element in HTML is considered a "box". Boxes have consistent properties. Below is a diagram of the box model. 
+			Where the box model describes the way in which every HTML block-level element has the potential for a border, padding, and margin.
+		</p>
+		
+		<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		
+		<p>
+			Explaining from the outside inward: </br>
+			The margin is the area outside of the element, which never has color. </br>
+			The border extends around the element, on the outer edge of any padding.</br>
+			The padding exists around the content and inherits the background color and content area. </br>
+			Finally, the content is surrounded by padding.</br></br>
+			The tricky part is to know the true height and width of an element. Despite indicating a &#60; div &#62; should be 250 pixels wide and 100 pixels high,
+			that &#60; div &#62; has to grow larger to accomodate the padding in use.
+			The total width of an element is the sum of: width + padding-left + padding-right + border-left + border-right + margin-left + margin-right.
+			Same goes for the height. You can begin to see how the box model will affect your design. 
+			The mathematics of the model are important. In dynamically driven sites or sites in which client-side display is driven by user interactions, your server-side or client-side code 
+			may draw and re-draw container elements on the fly. Basically, your code will produce the numbers, but you have to provide the boundaries.
+		</p>
+		<h3>Positioning</h3>
+		<p>
+			Relative positioning is the default type of positioning used by HTML. Absolute Positioning enables you to set the exact position
+			of HTML content on a page. Although absolute positioning gives you the freedom to spell out exactly where an element is to appear, the position is still 
+			relative to any parent elements that appear on the page. Basically, absolute positioning enables you to specify the exact location of an element's 
+			rectangular area with respect to its parent area, which is very different from relative positioning.
+			With the freedom of placing elements anywhere, you can run into some overlap. In this case CSS relies on the z-index of each element to determine which elemente
+			is on the top and which is on the bottom. 
+		</p>
+		<h2>Using CSS to Do More with Lists, Text, and Navigation</h2>
+		<p>
+			This section you will learn how to modify the appearance of list elements-beyond the use of <b>list-style-type</b> property that you learned in Chapter 5 
+			and how to use a CSS-styled list to replace the client-side image maps you learned in Chapter 8. 
+		</p>
+		<h3>HTML List</h3>
+		<p>
+			There are three basic HTML lists: <b>unordered, ordered, </b>and <b>definition</b>. 
+			Definition list is often used to display terms and their meanings. 
+			Specific list-related styles include <b>list-style-image</b>,<b>list-style-position,</b> and <b>list-style-type</b>. 
+			Although these styles control the structure of the listand items, you can also use <b>margin, padding, color,</b> and<b> background-color</b>
+			styles to achieve even more specific displays. A list is made up of two elements: the parent list element type and the individual list item.
+			Each of these elements has margins and paddings that can be affected by a style sheet.
+		</p>
+		<p>
+			In Chapter 8 we learned about image maps. Image maps enable you to define an area of an image and assign a link to that area.
+			You can also create an image map purely out of a valid XHTML and CSS.
+		</p>
+		<p>
+			Navigation differs from regular lists , because those links are typically displayed in a way that makes it clear that users should interact with the content:
+			<ul>
+				<li>The user's mouse cursor will change to indicate that the element is clickable.</li>
+				<li>The area around the element changes appearance when the mouse hovers it.</li>
+				<li>The content area is visually set apart from regular text.</li>
+			</ul>
+		</p>
+
+	</body>
+	
+	<footer>
+	</footer>
+</html>
