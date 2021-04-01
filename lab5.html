@@ -6,20 +6,100 @@
 		<meta name="description" content="CRN 40652 &middot; 28 March 2021 &middot; Assignment 5" > 
 	
 		<style>
-			div {
+			nav {
+				position:relative;
+				float: left;
+				width: 253px;
+				background-color: lightblue;
+				border: 1px solid black;
+			}
+			nav ul {
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				display: inline;
+			}
+			nav li {
+				display: inline;
+				line-height: 1.8em;
+			}
+			nav ul li a:link, nav ul li a:visited {
+				font-size: 10pt;
+				font-weight: bold;
+				padding: 7px 10px 7px 10px;
+				text-decoration: none;
+				background-color: lightblue;
+				color: #ffffff;
+			}
+			nav ul li a:hover, nav ul li a:active {
+				font-size: 10pt;
+				font-weight: bold;
+				padding: 7px 10px 7px 10px;
+				text-decoration: none;
+				background-color: #c6a648;
+				color: #000000;
+			}
+		
+			div#d1 {
+				position:relative;
+				width:500px;
+				height:1600px;
+				border:5px solid #000;
+				padding:10px;
+				margin-left:50px;
+				margin-top:75px;
+				color: black;
+				text-allign:center;
+				background-color:lavender;
+				left:0px;
+				toppx;
+			}
+			< !-- div#d4 {
 				background-color: lightgrey;
 				width: 300px;
 				border: 15px solid green;
 				padding: 50px;
 				margin: 20px;
+			} -->
+			
+			div#d2 {
+				position:relative;
+				width:500px;
+				height:700px;
+				border:5px solid #000;
+				padding:10px;
+				margin-left:100px;
+				color: black;
+				text-allign:center;
+				background-color:lavenderblush;
 			}
-		</style>
+			div#d3 {
+				position:relative;
+				width:500px;
+				height:600px;
+				border:5px solid #000;
+				padding:10px;
+				margin-left:150px;
+				color: black;
+				text-allign:center;
+				background-color:lightcyan;
+			}
 	
+		</style>
 	</head>
 	<body>
-		<h1><a id="top"></a> Summary of Chapters 9-11 </h1>
-
-		<h2>Working with Margins, Padding, Alignment, and Floating  </h2>
+		<h1>Summary of Chapters 9-11 </h1>
+				
+		<nav>
+          <ul>
+          <li><a href="#ch9">Chapter 9</a></li>
+          <li><a href="#ch10">Chapter 10</a></li>
+          <li><a href="#ch11">Chapter 11</a></li>
+          </ul>
+       </nav>
+	   
+		<div id='d1'> 
+		<h2 id="ch9">Chapter 9 </h2>
 		<p>
 			It is important to understand the four particular CSS properties individually before putting them together (margin and padding properties + align and float properties).
 		</p>
@@ -82,14 +162,16 @@
 			You will often use this property for images, but you can float all sorts of elements. Elements float horizontally not vertically, so there are only two values: <b>right</b> and <b>left</b>.
 			When used, an element that floats will float as far right or left as the containing element allows it. 
 		</p>
+		</div>
 
-		<h2> Understanding the CSS Box Model and Positioning</h2>
+		<div id='d2'>
+		<h2 id="ch10"> Chapter 10</h2>
 		<p> 
 			Every element in HTML is considered a "box". Boxes have consistent properties. Below is a diagram of the box model. 
 			Where the box model describes the way in which every HTML block-level element has the potential for a border, padding, and margin.
 		</p>
 		
-		<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<!-- <div id="d4">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> -->
 		
 		<p>
 			Explaining from the outside inward: </br>
@@ -113,7 +195,10 @@
 			With the freedom of placing elements anywhere, you can run into some overlap. In this case CSS relies on the z-index of each element to determine which elemente
 			is on the top and which is on the bottom. 
 		</p>
-		<h2>Using CSS to Do More with Lists, Text, and Navigation</h2>
+		</div>
+		
+		<div id='d3'>
+		<h2 id="ch11">Chapter 11</h2>
 		<p>
 			This section you will learn how to modify the appearance of list elements-beyond the use of <b>list-style-type</b> property that you learned in Chapter 5 
 			and how to use a CSS-styled list to replace the client-side image maps you learned in Chapter 8. 
@@ -139,6 +224,7 @@
 				<li>The content area is visually set apart from regular text.</li>
 			</ul>
 		</p>
+		</div>
 
 	</body>
 	
