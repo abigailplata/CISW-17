@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Summary of Chapter 19-21 </title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<h1>Summary of Chapters </h1>
+		<h2>Abigail  &middot; Plata CRN 40652 &middot; 18 April 2021 &middot; Assignment 7 </h2>
+		<h3> Chapter 19 </h3>
+			<p>
+				Events are when something happens to the browser -- the user clicking a button, mouse pointer moving, or the web page loading from the server.
+				The script that you use to detect and respond to an event is called an <em>event handler</em>.
+				JavaScript uses a set of onjects to store information about the various parts of a web page-buttons, links, images, windows, etc.
+				Each event is associated with an object and has a name. For instance, <strong>onMouseOver</strong> event occurs when the mouse pointer moves over an objecct on the page.
+				When the pointer moves over a link, the event is sent to that link's event handler, if it has one.
+				To define the event handler, you add it to that particular link's &#60;a&#62; HTML tag.
+				An example of creating an event handler:</br></br>
+				&#60;a href="http://www.google.com/"</br>
+					onmouseover="alert('You move over the link.');"&#62;</br>
+					This is a link.&#60; /a&#62; </br></br>
+				Instead of specifying an event handler in an HTML document, you can use JavaScript to assign a function as an event handler. 
+				This enables you to set event handlers conditionally, turn them on and off, and change the function that handles an event dynamically.
+				Now, waht if you want more than one thing to happen whenyou click on an element? 
+				Suppose you want two functions called <strong>update</strong> and <strong>display</strong> to bothe execute when a button is clicked.
+				One solution is to define a function that calls both functions. The W3C DOM standard defines a function, <strong>addEventListener</strong>, for this purpose.		
+			</p>
+		<h3>Chapter 20</h3>
+			<p>
+				Now, learning about some of the most useful objects in the DOM-browser windows and frames-and how JavaScripts can interact with them.
+				Previously we learned that we can use DOM objects to represent various parts of the browser window and the current HTML document.
+				In addition, we learned that the <strong>history, document,</strong> and <strong>location</strong> onjects are all children of the <strong>window</strong> object.
+				The <strong>window</strong> object always refers to the current window (the one containing the script). 
+				Although there is normally a single <strong>window</strong> object, there might be more than one if you are using pop-up windows or frames.
+				Each window objects has the following properties:
+				<ul>
+					<li> window.closed </li>
+					<li> window.defaultstatus and window.status </li>
+					<li> window.frames[] </li>
+					<li> window.name</li>
+					<li> window.opener</li>
+					<li> window.parent</li>
+					<li> window.screen</li>
+					<li>window.self</li>
+					<li>window.top</li>
+				</ul>
+				One of the most convenient uses for the window object is to create a new window.
+				You can create a new browser window with the <b>window.open()</b> method. 
+				The DOM also enables you to move or resize windows. The hardest thing to get a script to do is to do nothing at all - for a specific amount of time.
+				JavaScript includes a built-in function to do this. The <b>window.setTimeout</b> method enables you to specify a time delay and a command that will execute after the delay passes.
+				</p>
+		<h3>Chapter 21</h3>
+			<p>
+				In this section, you'll learn some guidelines for creating scripts and pages that are easy to mantain, use, and follow web standards.
+				Also known as, <em>unobtrusive scripting</em>: Scripts add features without getting in the way of the user, the developer mantaining the code, or the designer building layout of the site.
+				Guidelines for scripting best practices:
+				<ul>
+					<li> your code will be readable and easy to mantain, whether you're turning the page over to someone else or just trying to remember what you did a year go.</li>
+					<li> You'll create code that follows standards and won't be crippled by a new version of a particular browser. </li>
+					<li> You'll create pages that work even without JavaScript </li>
+					<li> It will be easy to adapt code you create for one site to another site or project.</li>
+					<li> Your users will thank you for create for one site to another site or project.</li>
+				</ul>
+				When creating a webpage, entire site, or application, you are dealing with three key areas: <em>content, presentation, and behavior</em>-all of which you've learned before.
+				As you create more complex scripts, do not forget to include comments in your code to document what it doess, especially when some of the code seems confusing.
+				It is good to document all the data structures, variables, and function arguments useed in a larger script.
+			</p>
+	</body>
+	
+	<footer>
+	</footer>
+</html>
