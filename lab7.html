@@ -2,13 +2,28 @@
 <html>
 	<head>
 		<title> Summary of Chapter 19-21 </title>
-		<style>
-			
-		</style>
+		<script type="text/javascript">
+			function showHide() {
+				if (!document.getElementById) return;
+				
+				var chap19 = document.getElementById("chap19");
+				var chap20 = document.getElementById("chap20");
+				var chap21 = document.getElementById("chap21");
+				
+				var showchap19 = document.checkboxform.checkbox1.checked;
+				var showchap20 = document.checkboxform.checkbox2.checked;
+				var showchap21 = document.checkboxform.checkbox3.checked;
+				
+				chap19.style.visibility=(showchap19) ? "visible" : "hidden";
+				chap20.style.visibility=(showchap20) ? "visible" : "hidden";
+				chap21.style.visibility=(showchap21) ? "visible" : "hidden";
+			}
+		</script>
 	</head>
 	<body>
 		<h1>Summary of Chapters </h1>
 		<h2>Abigail  &middot; Plata CRN 40652 &middot; 18 April 2021 &middot; Assignment 7 </h2>
+		<div id="chap19">
 		<h3> Chapter 19 </h3>
 			<p>
 				Events are when something happens to the browser -- the user clicking a button, mouse pointer moving, or the web page loading from the server.
@@ -27,6 +42,8 @@
 				Suppose you want two functions called <strong>update</strong> and <strong>display</strong> to bothe execute when a button is clicked.
 				One solution is to define a function that calls both functions. The W3C DOM standard defines a function, <strong>addEventListener</strong>, for this purpose.		
 			</p>
+		</div>
+		<div id="chap20">
 		<h3>Chapter 20</h3>
 			<p>
 				Now, learning about some of the most useful objects in the DOM-browser windows and frames-and how JavaScripts can interact with them.
@@ -51,6 +68,9 @@
 				The DOM also enables you to move or resize windows. The hardest thing to get a script to do is to do nothing at all - for a specific amount of time.
 				JavaScript includes a built-in function to do this. The <b>window.setTimeout</b> method enables you to specify a time delay and a command that will execute after the delay passes.
 				</p>
+		</div>
+		
+		<div id="chap21">
 		<h3>Chapter 21</h3>
 			<p>
 				In this section, you'll learn some guidelines for creating scripts and pages that are easy to mantain, use, and follow web standards.
@@ -67,6 +87,7 @@
 				As you create more complex scripts, do not forget to include comments in your code to document what it doess, especially when some of the code seems confusing.
 				It is good to document all the data structures, variables, and function arguments useed in a larger script.
 			</p>
+			</div>
 
 			<form name="checkboxform">
 			<input type="checkbox" name="checkbox1" onclick="showHide();" checked="checked">
