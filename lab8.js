@@ -2,7 +2,7 @@
 var numitems=0;
 var items = new Array();
 
-function SortItems() {
+function GetItems() {
 	//Get the item from the text field
 	theitem=document.theform.newitem.value;
 	//Add the item to the array
@@ -12,4 +12,8 @@ function SortItems() {
 	//sort
 	items.sort();
 	document.theform.sorted.value=items.join("\n");
+}
+
+function SortItems() {
+	
 }
