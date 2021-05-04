@@ -37,16 +37,3 @@ if  (hour_of_day_ny < 10)  {
      document.write(" Good day, NY!");
 }
 document.write("</p>");
-
-/*New York Time:
-d = new Date();
-localTime = .getTime();
-localOffset = d.getTimezoneOffset() * 60000;
-UTC = localTime + localOffset;
-offset = (-4);
-newyork = UTC + (3600000*offset);
-nd = new Date(newyork);
-document.writeln("<i> New York Time: </i>" + "<i>" + nd.toLocaleString() + " EST </i><br><br>");
-	*/	
-
-
