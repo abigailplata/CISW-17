@@ -5,17 +5,28 @@
 	Lab 10
 	</title>
 	
-	<h2> </h2>
+	<h2> Abigail Plata </h2>
 	<style>
-	
+		div:hover {
+			color:blue;
+		}
+		#eHide{
+			display: none;
+		}
+		
+	#eShow{
+		display: block;
+	}
 	</style>
 </header>
 <body>
-	<ul>
+	<ul style="list-style-type:circle;">
 		<div>
-			<li> </li>
-			<li> </li>
-		</div>
+			<li><h2>Abigail Plata</h2></li>
+			</div>
+			<li><a href="" target="newWindow"><h2>East Los Angeles, Ca</h2></a> </li>
+			<li><h2 id ="eShow"> &raquo;September 4, 1997</h2>
+				<h2 id="eHide"> &laquo; I am a Virgo</h2></li>
 	</ul>
 	
 	<footer>
@@ -23,7 +34,15 @@
 	</footer>
 	
 	<script>
-	
+		document.getElementById("eShow").addEventListener("click",function() {
+			this.style.display = 'none';
+			document.getElementById("eHide").style.display='block';
+		});
+		
+		document.getElementById("eHide").addEventListener("click",function() {
+			this.style.display = 'none';
+			document.getElementById("eShow").style.display='block';
+		});
 	</script>
 </body>
 
