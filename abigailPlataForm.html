@@ -44,32 +44,49 @@
 	</head>
 	<body>
 		<h1>Abigail Plata's Form</h1>
-		<form name="myForm" method="post" action="URL_to_script">
+		<form name="myForm" method="get" action>
 			<output id="errors"></output>
 			<fieldset>
 				<legend>Personal Information</legend>
 				<p>
-					<label class="question" for="the_name">
+					<label class="question" for="fname">
 						What is your first name?</label>
-					<input type="text" id="the_name" name="the_name" placeholder="Enter your name." size="50" required autofocus>
+					<input type="text" name="fname" placeholder="Enter your name." size="50">
 				</p>
 				<p>
-					<label class="question" for="the_name">
+					<label class="question" for="lname">
 						What is your last name?</label>
-					<input type="text" id="the_name" name="the_name" placeholder="Enter your name." size="50" required autofocus>
+					<input type="text" name="lname" placeholder="Enter your name." size="50">
 				</p>
 				<p>
-					<label class="question" for="the_addy">
+					<label class="question" for="addy">
 						What is your adress?</label>
-					<input type="text" id="the_addy" name="the_addy" placeholder="Enter your adress." size="50" required autofocus>
+					<input type="text" name="addy" placeholder="Enter your adress." size="50">
 				</p>
 				<p>
-					<label class="question" for="the_email">
+					<label class="question" for="email">
 						What is your email?</label>
-					<input type="text" id="the_email" name="the_email" placeholder="Enter your email." size="50" required autofocus>
+					<input type="text" name="email" placeholder="Enter your email." size="50">
+				</p>
+				<p>
+					<input type="button" value="Display" id="display">
 				</p>
 		
 		</form>
+		<script>
+			function display() {
+				dispWin = window.open('','NewWin',
+				'menubar=no,toolbar=no,status=no,width=400,height=100');
+				message = "<ul><li>NAME:" + document.myForm.fname.value+ document.myForm.lname.value;
+				message += "<li>ADDRESS:" + document.myForm1.address.value;
+				message += "<li>PHONE:" + document.myForm.phone.value;
+				message += "</ul>";
+				dispWin.document.write(message);
+				
+			}
+			
+			document.getElementById("display").addEventListener("click", display);
+		</script>
 	</body>
 </html>
 
