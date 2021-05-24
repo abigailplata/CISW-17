@@ -68,9 +68,6 @@
 						What is your email?</label>
 					<input type="text" name="email" placeholder="Enter your email." size="50">
 				</p>
-				<p>
-					<input type="button" value="Display" id="display">
-				</p>
 			</fieldset>
 			<fieldset>
 				<legend>Personal Choices</legend>
@@ -83,11 +80,11 @@
 					<input type="checkbox" id="thai" name="food" value="Thai food">
 					<label for="thai">Thai Food.</label>
 					<br>
-					<input type="checkbox" id="Vietnamese" name="food" value="Vietnamese food">
-					<label for="Vietnamese">Vietnamese Food.</label>
+					<input type="checkbox" id="Soul" name="food" value="Soul food">
+					<label for="Soul">Soul Food.</label>
 					<br>
-					<input type="checkbox" id="japanese" name="food" value="Japanese food">
-					<label for="japanese">Japanese Food.</label>
+					<input type="checkbox" id="italy" name="food" value="italy food">
+					<label for="italy">Italian Food.</label>
 					<br><br>
 					
 					<span class="question">Select from 3 favorite web stores:</span>
@@ -106,15 +103,23 @@
 					<br>
 					<select id="music" size="4" multiple>
 						<option value="Excision">Excision</option>
-						<option value="Illenium">Illenium</option>
+						<option value="Kid Cudi">Kid Cudi</option>
 						<option value="Odesza">Odesza</option>
-						<option value="BTSM">BTSM</option>
+						<option value="bunny">Bad Bunny</option>
 					</select>
 					<br><br>
 					
 
 				</p>
+				
 		</form>
+		</fieldset>
+		
+				<p>
+					<input type="button" value="Display" id="display">
+					<input type="button" value="Reset" id="reset">
+				</p>
+
 		<script>
 			function display() {
 				dispWin = window.open('','NewWin',
