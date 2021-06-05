@@ -59,9 +59,9 @@
 					<input type="text" name="lname" placeholder="Enter your name." size="50">
 				</p>
 				<p>
-					<label class="question" for="addy">
+					<label class="question" for="address">
 						What is your adress?</label>
-					<input type="text" name="addy" placeholder="Enter your adress." size="50">
+					<input type="text" name="address" placeholder="Enter your adress." size="50">
 				</p>
 				<p>
 					<label class="question" for="email">
@@ -116,17 +116,25 @@
 		</fieldset>
 		
 				<p>
+				<div id="buttons">
 					<input type="button" value="Display" id="display">
-					<input type="button" value="Reset" id="reset">
+					<input type="reset" value="Reset" onClick = "fun()"/>
+				</div>
 				</p>
 
 		<script>
+			function fun() {
+				document.getElementById("myForm").reset();
+			}
 			function display() {
 				dispWin = window.open('','NewWin',
-				'menubar=no,toolbar=no,status=no,width=400,height=100');
-				message = "<ul><li>NAME:" + document.myForm.fname.value+ document.myForm.lname.value;
-				message += "<li>ADDRESS:" + document.myForm.address.value;
-				message += "<li>PHONE:" + document.myForm.phone.value;
+				'menubar=no,toolbar=no,status=no,width=800,height=500');
+				message = "<ul><li>NAME:" + 
+				document.myForm.fname.value + document.myForm.lname.value;
+				message += "<li>ADDRESS:" + 
+				document.myForm.address.value;
+				message += "<li>EMAIL:" + 
+				document.myForm.email.value;
 				message += "</ul>";
 				dispWin.document.write(message);
 				
